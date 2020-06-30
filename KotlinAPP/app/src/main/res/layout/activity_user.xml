@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".UserActivity">
+
+    <ImageView
+        android:id="@+id/imagecode"
+        android:layout_width="match_parent"
+        android:layout_height="187dp"
+        android:layout_above="@+id/text_view_result"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/code" />
+
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/login"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorFormBackground" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/colorFormBackground"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="@string/Code"
+            android:importantForAutofill="no"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="74dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorFormBackground" />
+
+    <ImageView
+        android:id="@+id/icRequired2"
+        android:layout_width="12dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginBottom="187dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_required_field" />
+
+</RelativeLayout>

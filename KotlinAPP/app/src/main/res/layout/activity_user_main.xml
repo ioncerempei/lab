@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".user.view.UserMainView">
+
+
+    <TextView
+        android:id="@+id/nrSpaces"
+        android:layout_width="254dp"
+        android:layout_height="103dp"
+        android:layout_above="@+id/reservePlace"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="8dp"
+        android:background="#8BC34A"
+        android:fontFamily="serif"
+        android:text="@string/spaces"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorFormBackground"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reservePlace"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/list1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="139dp"
+        android:backgroundTint="#D8C51F"
+        android:text="@string/reserve_place"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/list_with_added_plates"
+        android:textColor="@color/black"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="270dp"
+        android:layout_height="161dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="22dp"
+        android:background="#3E00838F"
+        android:choiceMode="multipleChoice">
+
+    </ListView>
+
+</RelativeLayout>

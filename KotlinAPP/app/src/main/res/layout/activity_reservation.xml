@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".ReservationActivity">
+
+    <ImageView
+        android:id="@+id/cars"
+        android:layout_width="411dp"
+        android:layout_height="158dp"
+        android:layout_above="@+id/text_view_result"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/cars" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/places_left"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorFormBackground" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="268dp"
+        android:background="@color/colorFormBackground"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/selectNrReserve"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="@string/select_plate_nr"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icRequired1"
+        android:layout_width="12dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="387dp"
+        android:layout_marginBottom="298dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_required_field" />
+
+    <Button
+        android:id="@+id/buttonMaxTime"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="208dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/time_of_arrival_n_max_10_min"
+        android:textAllCaps="false"
+        android:textColor="@color/colorFormBackground" />
+
+    <ImageView
+        android:id="@+id/icRequired2"
+        android:layout_width="11dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginBottom="223dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/ic_required_field" />
+
+    <Button
+        android:id="@+id/buttonReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/reserve"
+        android:textAllCaps="false"
+        android:textColor="@color/colorFormBackground" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBackground"
+    tools:context=".admin.view.AddPlateView">
+
+
+    <EditText
+        android:id="@+id/basicNr"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/details0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="32dp"
+        android:drawablePadding="5dp"
+        android:hint="@string/basic"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/plateNR"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="565dp"
+        android:text="@string/plateNr"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorFormBackground" />
+
+    <TextView
+        android:id="@+id/details0"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/technical"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorFormBackground" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="250dp"
+        android:background="@color/colorFormBackground"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="@string/carBrand"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/details1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="@string/carColor"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/details2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:hint="@string/details"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/sendConfirm"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="15dp"
+    android:background="@color/colorPrimaryDark"
+    android:text="Add Plate"
+    android:textAllCaps="false"
+    android:textColor="@color/colorFormBackground" />
+
+</RelativeLayout>

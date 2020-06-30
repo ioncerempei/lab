@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="todo">Admin</string>
+    <string name="searchAccount">Search</string>
+    <string name="The_list">The list</string>
+    <string name="add_account">Add account</string>
+    <string name="login">Login</string>
+    <string name="login1">Login</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="Admin">Admin</string>
+    <string name="User">User</string>
+    <string name="password1">password</string>
+    <string name="email1">email</string>
+    <string name="sign_up1">Sign Up</string>
+    <string name="Code">Code</string>
+    <string name="basic">Basic</string>
+    <string name="plateNr">Plate Nr</string>
+    <string name="technical">Technical Details</string>
+    <string name="confirm">Send for confirmation</string>
+    <string name="details">DETAILS</string>
+    <string name="carBrand">BRAND</string>
+    <string name="carColor">COLOR</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="edit_plate">EDIT PLATE</string>
+    <string name="click_up_to_edit">Click to edit</string>
+    <string name="delete_plate">DELETE PLATE</string>
+    <string name="details_technical_passport">DETAILS (TECHNICAL PASSPORT…)</string>
+    <string name="spaces">...</string>
+    <string name="reserve_place">reserve Place</string>
+    <string name="list_with_added_plates">List With Added Plates</string>
+    <string name="reserve">Reserve</string>
+    <string name="time_of_arrival_n_max_10_min">Time of Arrival\n (Max - 10 min)</string>
+    <string name="select_plate_nr">Select plate nr</string>
+    <string name="places_left">Places Left</string>
+    <string name="add">Add</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_details">Account Details</string>
+    <string name="list_with_plates">List with plates</string>
+    <string name="add_an_plate">Add an plate</string>
+    <string name="delete_n_account">delete account</string>
+    <string name="edit_n_account">edit account</string>
+    <string name="don_t_have_an_account">don\'t have an Account?</string>
+    <string name="register_now">Click to Register</string>
+    <string name="back">Back</string>
+    <string name="add_plate">add plate</string>
+
+
+</resources>
